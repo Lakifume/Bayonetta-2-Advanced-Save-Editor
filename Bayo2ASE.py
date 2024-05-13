@@ -180,6 +180,7 @@ class MainWindow(QGraphicsView):
         self.setFixedSize(666, 500)
         self.setWindowTitle(script_name)
         self.setWindowIcon(QIcon(resource_path("Bayo2.ico")))
+        self.show()
         
         #Position
         
@@ -187,7 +188,6 @@ class MainWindow(QGraphicsView):
         geo = self.frameGeometry()
         geo.moveCenter(center)
         self.move(geo.topLeft())
-        self.show()
         
         self.set_widgets_enabled(False)
         QApplication.processEvents()

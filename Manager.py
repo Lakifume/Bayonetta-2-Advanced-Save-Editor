@@ -221,7 +221,7 @@ def init():
             "Start":        (0x01207EB66703, "BATTLE_A"),
             "Love Is Blue": (0x01207C84D7C7, "BATTLE_A_HAS_BLUE"),
             "Glamor Intro": (0x012067BF36B9, "BATTLE_B"),
-            "Train Belief": (0x0130363F4EFF, "CATCH_UP_EV"),
+            "Train Chase":  (0x0130363F4EFF, "CATCH_UP_EV"),
             "Belief":       (0x01304C3D28C5, "VRS_10_MUCHI_B"),
             "Gomorrah":     (0x01406CEEE7F5, "P140_BTL_OUT_BUILDING"),
             "Gomorrah 2":   (0x014054D69232, "P140_BTL_TOP_BUILDING")
@@ -248,7 +248,7 @@ def init():
             "Start":         (0x02404051BFE9, "P240_TORNADO"),
             "Glamor Tunnel": (0x02405632EF16, "P240_TORNADO_02"),
             "Glamor":        (0x024074CE2098, "P240_AIR_BATTLE"),
-            "Glamor (End)":  (0x02401568F545, "P240_AIR_BATTLE_02")
+            "Glamor 2":      (0x02401568F545, "P240_AIR_BATTLE_02")
         },
         "The Two Meet": {
             "Start":       (0x024B7C438F6D, "P24B_EVENT_END"),
