@@ -486,7 +486,7 @@ def write_to_save_file(save_path):
         save_file.seek(chapter_index_offset[1])
         save_file.write(chapter_index.to_bytes(4, endian))
         save_file.seek(chapter_offset)
-        save_file.write((0).to_bytes(0x26, endian))
+        save_file.write((0).to_bytes(0x28, endian))
         save_file.seek(chapter_offset)
         save_file.write(chapter_id[0].to_bytes(4, endian))
         save_file.write(chapter_id[1].to_bytes(4, endian))
@@ -494,7 +494,7 @@ def write_to_save_file(save_path):
         #Checkpoint
         checkpoint_id = no_checkpoint_id if no_checkpoint else checkpoint_to_id[chapter][checkpoint]
         save_file.seek(checkpoint_offset)
-        save_file.write((0).to_bytes(0x26, endian))
+        save_file.write((0).to_bytes(0x28, endian))
         save_file.seek(checkpoint_offset)
         save_file.write(checkpoint_id[0].to_bytes(4, endian))
         save_file.write(checkpoint_id[1].to_bytes(4, endian))
