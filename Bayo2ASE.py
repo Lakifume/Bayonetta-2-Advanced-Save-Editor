@@ -193,9 +193,9 @@ class MainWindow(QGraphicsView):
         QApplication.processEvents()
     
     def set_widgets_enabled(self, enabled):
-        for i in self.children():
-            if i != self.button_1:
-                i.setEnabled(enabled)
+        for widget in self.children():
+            if widget != self.button_1:
+                widget.setEnabled(enabled)
     
     def open_save_file(self, save_path):
         Manager.init()
